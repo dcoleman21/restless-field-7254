@@ -1,0 +1,16 @@
+<h1><center>Welcome to <%= @airline.name %> Airlines</center></h1>
+<br>
+<hr>
+<br>
+<table>
+  <th>Passenger Name</th>
+</table>
+<div id="passengers">
+  <% @airline.adult_passengers.each do |passenger| %>
+  <tr>
+    <li>
+    <td><%= passenger.name %></td>
+    </li>
+  </tr>
+  <% end %>
+</div>
